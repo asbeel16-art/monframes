@@ -106,7 +106,7 @@
         </div>
     </section>
 
-    <!-- Portafolio / Galería (8 Imágenes optimizadas en JPG) -->
+    <!-- Portafolio / Galería (8 Imágenes) -->
     <section id="portafolio" class="py-24">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-16">
@@ -169,7 +169,7 @@
                 <div class="border-l-4 border-gray-700 pl-6">
                     <h3 class="serif text-2xl text-white mb-3">01. Anticipo y Cancelaciones</h3>
                     <p class="text-sm text-gray-400 leading-relaxed font-light">
-                        Para agendar cualquier sesión fotográfica, es estrictamente necesario cubrir un <strong>anticipo del 50%</strong> del total. Este anticipo <strong>no es reembolsable</strong> bajo ninguna circunstancia en caso de cancelación por parte del cliente, ya que cubre el tiempo reservado que no podrá ser recuperado ni agendado a alguien más.
+                        Para agendar cualquier sesión fotográfica, es strictly necesario cubrir un <strong>anticipo del 50%</strong> del total. Este anticipo <strong>no es reembolsable</strong> bajo ninguna circunstancia en caso de cancelación por parte del cliente, ya que cubre el tiempo reservado que no podrá ser recuperado ni agendado a alguien más.
                     </p>
                 </div>
 
@@ -190,7 +190,7 @@
         </div>
     </section>
 
-    <!-- Contacto (Integrado con Formspree) -->
+    <!-- Contacto (Integrado con Formspree y Datos completos) -->
     <section id="contacto" class="py-24 relative">
         <div class="max-w-xl mx-auto px-4">
             <div class="text-center mb-16">
@@ -201,6 +201,14 @@
             <form action="https://formspree.io/f/mljdnrdz" method="POST" class="space-y-8">
                 <div>
                     <input type="text" name="nombre" placeholder="NOMBRE COMPLETO" required class="w-full bg-transparent border-b border-gray-800 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-white transition">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <input type="email" name="email" placeholder="CORREO ELECTRÓNICO" required class="w-full bg-transparent border-b border-gray-800 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-white transition">
+                    </div>
+                    <div>
+                        <input type="tel" name="telefono" placeholder="TELÉFONO / WHATSAPP" required class="w-full bg-transparent border-b border-gray-800 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-white transition">
+                    </div>
                 </div>
                 <div>
                     <input type="text" name="servicio" placeholder="TIPO DE SESIÓN (Retrato, Mascota, Producto...)" required class="w-full bg-transparent border-b border-gray-800 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-white transition">
