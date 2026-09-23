@@ -169,7 +169,7 @@
                 <div class="border-l-4 border-gray-700 pl-6">
                     <h3 class="serif text-2xl text-white mb-3">01. Anticipo y Cancelaciones</h3>
                     <p class="text-sm text-gray-400 leading-relaxed font-light">
-                        Para agendar cualquier sesión fotográfica, es strictly necesario cubrir un <strong>anticipo del 50%</strong> del total. Este anticipo <strong>no es reembolsable</strong> bajo ninguna circunstancia en caso de cancelación por parte del cliente, ya que cubre el tiempo reservado que no podrá ser recuperado ni agendado a alguien más.
+                        Para agendar cualquier sesión fotográfica, es estrictamente necesario cubrir un <strong>anticipo del 50%</strong> del total. Este anticipo <strong>no es reembolsable</strong> bajo ninguna circunstancia en caso de cancelación por parte del cliente, ya que cubre el tiempo reservado que no podrá ser recuperado ni agendado a alguien más.
                     </p>
                 </div>
 
@@ -190,7 +190,7 @@
         </div>
     </section>
 
-    <!-- Contacto -->
+    <!-- Contacto (Integrado con Formspree) -->
     <section id="contacto" class="py-24 relative">
         <div class="max-w-xl mx-auto px-4">
             <div class="text-center mb-16">
@@ -198,15 +198,15 @@
                 <p class="text-sm text-gray-500 uppercase tracking-widest">Disponibilidad exclusiva los días martes</p>
             </div>
 
-            <form id="contactForm" class="space-y-8" onsubmit="event.preventDefault(); alert('¡Gracias! Tu solicitud ha sido enviada. Recuerda que las sesiones son únicamente los martes.');">
+            <form action="https://formspree.io/f/mljdnrdz" method="POST" class="space-y-8">
                 <div>
-                    <input type="text" placeholder="NOMBRE COMPLETO" required class="w-full bg-transparent border-b border-gray-800 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-white transition">
+                    <input type="text" name="nombre" placeholder="NOMBRE COMPLETO" required class="w-full bg-transparent border-b border-gray-800 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-white transition">
                 </div>
                 <div>
-                    <input type="text" placeholder="TIPO DE SESIÓN (Retrato, Mascota, Producto...)" required class="w-full bg-transparent border-b border-gray-800 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-white transition">
+                    <input type="text" name="servicio" placeholder="TIPO DE SESIÓN (Retrato, Mascota, Producto...)" required class="w-full bg-transparent border-b border-gray-800 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-white transition">
                 </div>
                 <div>
-                    <textarea placeholder="CUÉNTAME SOBRE TU IDEA..." rows="4" required class="w-full bg-transparent border-b border-gray-800 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-white transition resize-none"></textarea>
+                    <textarea name="mensaje" placeholder="CUÉNTAME SOBRE TU IDEA..." rows="4" required class="w-full bg-transparent border-b border-gray-800 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-white transition resize-none"></textarea>
                 </div>
                 <div class="pt-4 text-center">
                     <button type="submit" class="bg-white text-black px-12 py-4 text-sm tracking-widest uppercase hover:bg-gray-300 transition w-full md:w-auto">Solicitar Fecha (Martes)</button>
